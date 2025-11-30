@@ -52,7 +52,7 @@ header {
   background-color: #022000;
   width: 100%;
   padding: 3px 15px;
-min-height: 45px;
+  min-height: 45px;
 
   box-sizing: border-box;
   position: relative;
