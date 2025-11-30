@@ -1,0 +1,134 @@
+/* --- Logo --- */
+.logo {
+  width: clamp(40px, 8vw, 80px);
+  height: auto;
+  vertical-align: middle;
+  position: relative;
+}
+
+.title {
+  color: white;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 15px;
+  font-size: clamp(1.3rem, 2.2vw, 2rem);
+  white-space: nowrap;
+}
+
+/* --- Text --- */
+p {
+  font-family: Arial, sans-serif;
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  line-height: 1.5;
+  color: #000;
+  margin-left: 20px;
+}
+
+h1, h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  display: inline-block;
+}
+
+h2 {
+  font-size: clamp(1rem, 3vw, 2rem);
+  margin-left: 20px;
+}
+
+/* --- Body --- */
+body {
+  margin: 0;
+  background-color: #ffffff;
+}
+
+/* --- Header (flexbox) --- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  width: 100%;
+  padding: 3px 15px;
+  min-height: 45px;
+
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Grup logo + titlu */
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+/* --- Navbar Desktop --- */
+.navBar {
+  display: flex;
+  gap: clamp(10px, 1.5vw, 20px);
+  align-items: center;
+}
+
+.navBar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+  padding: clamp(4px, 0.8vw, 8px) clamp(6px, 1vw, 12px);
+  transition: color 0.3s ease;
+}
+
+.navBar a:hover,
+.navBar a.active {
+  color: white;
+}
+
+/* --- Hamburger --- */
+.hamburger {
+  display: none;
+  position: absolute;
+  right: 20px;
+  font-size: 2rem;
+  color: #ffffff;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* --- Mobile --- */
+@media (max-width: 768px) {
+
+  /* NavBar ascuns în mod normal */
+  .navBar {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100px;
+    text-align: right;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease;
+    border-radius: 0px;
+    margin-right: 0;
+    padding: 0;
+  }
+
+  /* Arată meniul când checkbox-ul e activ */
+  #menu-toggle:checked ~ .navBar {
+    max-height: 300px;
+    padding: 10px 0;
+  }
+
+  .navBar a {
+    padding: 10px 15px;
+  }
+
+  /* Arată hamburger pe mobil */
+  .hamburger {
+    display: block;
+  }
+}
