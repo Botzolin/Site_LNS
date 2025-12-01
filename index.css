@@ -12,6 +12,7 @@
   margin-left: 15px;
   font-size: clamp(1.3rem, 2.2vw, 2rem);
   white-space: nowrap;
+  margin-bottom: 7px;
 }
 
 /* --- Text --- */
@@ -41,7 +42,7 @@ h2 {
 /* --- Body --- */
 body {
   margin: 0;
-  background-color: #ffffff;
+  background-color: #d3d2c8;
 }
 
 /* --- Header (flexbox) --- */
@@ -80,13 +81,13 @@ header {
   text-decoration: none;
   font-weight: bold;
   font-size: clamp(0.9rem, 1.5vw, 1.2rem);
-  padding: clamp(4px, 0.8vw, 8px) clamp(6px, 1vw, 12px);
+  padding: clamp(12px, 0.8vw, 8px) clamp(6px, 1vw, 12px);
   transition: color 0.3s ease;
 }
 
-.navBar a:hover {
-  color: #1e90ff;
-  text-decoration: underline;
+.navBar a:hover,
+.navBar a.active {
+  color: rgb(196, 196, 196);
 }
 
 /* --- Hamburger --- */
@@ -95,7 +96,7 @@ header {
   position: absolute;
   right: 20px;
   font-size: 2rem;
-  color: #ffffff;
+  color: rgb(196, 196, 196);
   cursor: pointer;
   user-select: none;
 }

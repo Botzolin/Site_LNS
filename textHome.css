@@ -2,9 +2,10 @@
 
 /* Containerul din stânga */
 .left-box {
-    width: 50%;              /* jumătatea stângă */
+    width: 100%;              /* jumătatea stângă */
     padding: 30px;
     box-sizing: border-box;
+    display: flex;
 }
 
 /* Chenarul propriu-zis */
@@ -14,6 +15,8 @@
     border-radius: 12px;      /* colțuri rotunjite */
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);  /* umbră ușoară */
     color: #000;
+    flex-direction: column;
+    
 }
 
 /* Titlul */
@@ -26,14 +29,16 @@
 
 /* Paragrafe */
 .textHome p {
-    font-size: clamp(1rem, 1.3vw, 1.15rem);
+    font-size: clamp(1.3rem, 1.15rem, 1.25rem);
     line-height: 1.6;
-    margin-bottom: 12px;
+    margin-bottom: 25px;
     margin-left: 20px;
+    display: flex;
+    align-items: stretch;  /* textul ocupă toată înălțimea */
 }
 
 /* Responsiv pe mobil */
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
     .left-box {
         width: 100%;        /* pe mobil ocupă toată lățimea */
         padding: 15px;
