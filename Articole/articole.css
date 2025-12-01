@@ -3,13 +3,15 @@
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 /* Chenarul propriu-zis */
 .textArticoleBox {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     background: #dedede;
     border-radius: 12px;
     padding: 20px;
@@ -62,13 +64,21 @@
 }
 
 /* Responsiv pe mobil */
+@media (max-width: 1024px) {
+    .left-box {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 15px;
+        gap: 15px;
+    }
+}
+
 @media (max-width: 768px) {
     .left-box {
-        width: 100%;        /* pe mobil ocupă toată lățimea */
+        grid-template-columns: 1fr;
         padding: 15px;
     }
 
     .textArticoleBox {
-        padding: 20px;
+        padding: 15px;
     }
 }
