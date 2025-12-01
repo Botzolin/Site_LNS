@@ -1,9 +1,12 @@
+
+//inceput articol (se pune cand faci un articol nou)
+
 <!DOCTYPE html>
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../../../index.css">
-    <title>Articol2</title>
+    <title>Articol1</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -31,3 +34,17 @@
 
 </body>
 </html>
+
+///////////////////////////////////////////////
+//Chenar articol (se pune in articole.html si se modifica numarul)
+
+<div class="left-box">
+        <div class="textArticoleBox">
+            <div class="coloanaText">
+                <h1><a href="Istoric/Articol1/articol1.html">Articol 1</a></h1>
+                <p>Scurta descriere a articolului</p>
+            </div>
+            
+            <img src="Istoric/Articol1/Poze1/n-a-hi.png" class="imagineChenar">
+        </div>
+</div>

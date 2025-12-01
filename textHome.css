@@ -1,0 +1,50 @@
+/* text Home */
+
+/* Containerul din stânga */
+.left-box {
+    width: 100%;              /* jumătatea stângă */
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+/* Chenarul propriu-zis */
+.textHome {
+    background: #dedede;      /* fundal deschis */
+    padding: 25px;
+    border-radius: 12px;      /* colțuri rotunjite */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);  /* umbră ușoară */
+    color: #000;
+    flex-direction: column;
+    
+}
+
+/* Titlul */
+.textHome h1 {
+    font-size: clamp(1.5rem, 3vw, 2.3rem);
+    margin-bottom: 20px;
+    color: #000000; /* în ton cu headerul */
+    margin-left: 20px;
+}
+
+/* Paragrafe */
+.textHome p {
+    font-size: clamp(1.3rem, 1.15rem, 1.25rem);
+    line-height: 1.6;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    display: flex;
+    align-items: stretch;  /* textul ocupă toată înălțimea */
+}
+
+/* Responsiv pe mobil */
+@media (max-width: 1300px) {
+    .left-box {
+        width: 100%;        /* pe mobil ocupă toată lățimea */
+        padding: 15px;
+    }
+
+    .textHome {
+        padding: 20px;
+    }
+}
