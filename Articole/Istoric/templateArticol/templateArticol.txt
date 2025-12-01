@@ -1,10 +1,12 @@
+
+//inceput articol (se pune cand faci un articol nou)
+
 <!DOCTYPE html>
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../index.css">
-     <link rel="stylesheet" href="articole.css">
-    <title>Articole</title>
+    <link rel="stylesheet" href="../../../index.css">
+    <title>Articol1</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -12,8 +14,8 @@
     <header>
 
         <div class="left-section">
-            <a href="../index.html">
-                <img src="../PozeHome/logo.png" class="logo">
+            <a href="../../../index.html">
+                <img src="../../../PozeHome/logo.png" class="logo">
             </a>
 
             <h1 class="title">Liga Național-Studențească</h1>
@@ -23,28 +25,20 @@
         <label for="menu-toggle" class="hamburger">☰</label>
 
         <nav class="navBar">
-            <a href="../Articole/articole.html">Articole</a>
+            <a href="../../articole.html">Articole</a>
         </nav>
 
     </header>
        
-    
-    <div class="left-box">
-        <div class="textArticoleBox">
-            <div class="coloanaText">
-                <h1><a href="Istoric/Articol2/articol2.html">Articol 2</a></h1>
-                <p>Scurta descriere a articolului</p>
-            </div>
-            
-            <img src="Istoric/Articol2/Poze2/n-a-hi.png" class="imagineChenar">
-        </div>
-    </div>
 
 
+</body>
+</html>
 
+///////////////////////////////////////////////
+//Chenar articol (se pune in articole.html si se modifica numarul)
 
-
-    <div class="left-box">
+<div class="left-box">
         <div class="textArticoleBox">
             <div class="coloanaText">
                 <h1><a href="Istoric/Articol1/articol1.html">Articol 1</a></h1>
@@ -53,12 +47,4 @@
             
             <img src="Istoric/Articol1/Poze1/n-a-hi.png" class="imagineChenar">
         </div>
-    </div>
-      
-      
-    
-    
-
-
-</body>
-</html>
+</div>

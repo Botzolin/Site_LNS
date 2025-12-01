@@ -13,7 +13,7 @@
     background: #dedede;      /* fundal deschis */
     padding: 25px;
     border-radius: 12px;      /* colțuri rotunjite */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);  /* umbră ușoară */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);  /* umbră ușoară */
     color: #000;
     flex-direction: column;
     

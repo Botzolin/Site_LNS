@@ -1,0 +1,74 @@
+/* Containerul link */
+.left-box {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Chenarul propriu-zis */
+.textArticoleBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #dedede;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/*Coloane in chenar*/
+.coloanaText {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+/* Titlul */
+.textArticoleBox h1 {
+    font-size: clamp(1.5rem, 3vw, 2.3rem);
+    margin-bottom: 20px;
+    color: #000000;
+    margin-left: 20px;
+}
+
+.textArticoleBox h1 a {
+    color: #000;              /* titlu negru */
+    text-decoration: none;    /* fara subliniere */
+    transition: color 0.3s;   /* animatie smooth */
+    font-weight: bold;
+}
+
+.textArticoleBox h1 a:hover {
+    color:#1e90ff;
+    text-decoration: underline;
+}
+
+
+/* Paragrafe */
+.textArticoleBox p {
+    font-size: clamp(1rem, 1.3vw, 1.15rem);
+    line-height: 1.6;
+    margin-bottom: 12px;
+    margin-left: 20px;
+}
+
+/*imagine chenar*/
+.imagineChenar {
+  width: clamp(80px, 30vw, 130px);
+  height: auto;
+  vertical-align: middle;
+  position: relative;
+}
+
+/* Responsiv pe mobil */
+@media (max-width: 768px) {
+    .left-box {
+        width: 100%;        /* pe mobil ocupă toată lățimea */
+        padding: 15px;
+    }
+
+    .textArticoleBox {
+        padding: 20px;
+    }
+}
